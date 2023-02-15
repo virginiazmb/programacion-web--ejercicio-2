@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="heading">Tarjeta de Datos</div>
+        <form method="post" action="php\index.php">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details">Cedula del Alumno</span>
+                    <input type="text" placeholder="Ingrese cedula" name="cedula" maxlength="8">
+                </div>
+                <div class="card-box">
+                    <span class="details">Nombre completo</span>
+                    <input type="text" placeholder="Ingrese nombre" name="name" maxlength="25">
+                </div>
+                <div class="card-box">
+                    <span class="details">Nota de matematicas</span>
+                    <input type="number" min="02" max="20" name="mate">
+                </div>
+                <div class="card-box">
+                    <span class="details">Nota de fisica</span>
+                    <input type="number" min="02" max="20" name="fisi">
+                </div>
+                <div class="card-box">
+                    <span class="details">Nota de programacion</span>
+                    <input type="number" min="02" max="20" name="program">
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Ingresar" name="btn" onclick="alert('Registro de alumno exitoso!')">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
+

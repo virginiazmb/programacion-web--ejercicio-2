@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans MT';
+}
+
+body{
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(235,80,80);
+    background: linear-gradient(90deg, rgba(235,80,80,1) 0%, rgba(24,36,117,1) 68%);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgb(24,36,117);
+    background: linear-gradient(90deg, rgba(24,36,117,1) 14%, rgba(235,80,80,1) 81%);
+}
+
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0; 
+}
+
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255,144,203);
+    background: radial-gradient(circle, rgba(255,144,203,1) 0%, rgba(77,70,252,1) 100%);
+}
+
+.container form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .card-details .card-box{
+    width: calc(100%/2 - 20px);
+    margin-bottom: 15px; 
+}
+
+.card-details .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card-details  .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+
+form .button{
+    text-align: center;
+}
+
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: rgb(169,59,59);
+    background: radial-gradient(circle, rgba(169,59,59,1) 0%, rgba(77,70,252,1) 100%);
+}
